@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.denkiri.zalego">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/zalego"
+        android:label="@string/app_name"
+        android:permission=""
+        android:roundIcon="@mipmap/zalego"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Success"
+            android:theme="@style/AppTheme.NoActionBars"
+            ></activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+
+            android:name=".MpesaActivity"
+
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity android:name=".categories.Programming" />
+        <activity
+            android:name=".RegisteredCoursesActivity"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".DetailActivity"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".Profile"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".auth.ChangePasswordActivity" />
+        <activity
+            android:name=".auth.VerifyPhoneActivity"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".auth.ForgotPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".auth.RegistrationActivity"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity android:name=".AuthActivity" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBars" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MPESAMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MPESAInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

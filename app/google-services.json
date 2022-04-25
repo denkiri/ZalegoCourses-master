@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "113592752501",
+    "firebase_url": "https://zalego-b7617.firebaseio.com",
+    "project_id": "zalego-b7617",
+    "storage_bucket": "zalego-b7617.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113592752501:android:314de25d5037c4a5be9b3c",
+        "android_client_info": {
+          "package_name": "com.denkiri.zalego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113592752501-gemd8pqerhnmdg5esl5esqmt0kbbbj87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.denkiri.zalego",
+            "certificate_hash": "c0cf59055a45b028c896cabe2cb613ce09caacc2"
+          }
+        },
+        {
+          "client_id": "113592752501-9qa1nks3vpkk1pg1s9l930ucp9tmspeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs2xfyOQfTzPmzFuezai-AbYlXcTJoz0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113592752501-9qa1nks3vpkk1pg1s9l930ucp9tmspeh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
